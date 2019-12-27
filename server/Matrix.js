@@ -16,6 +16,13 @@ class Matrix {
                 matrix[r].push(".")
             }
         }
+
+        for (let r = 0; r < numRows; r++) { //add coins
+            for (let c = 0; c < numColumns/2; c++) {
+                matrix[r][Math.floor(Math.random() * numColumns)] = "c"
+            }
+        }
+        
         matrix[0][0] = "1"
         matrix[numRows-1][numColumns-1] = "2"
         return matrix

@@ -8,8 +8,6 @@ class GoldRush extends Matrix {
         let p1 = this.findCoordinate("1")
         let p2 = this.findCoordinate("2")
         
-
-
         if (playerNum === 1) {
             switch (movement) {
                 case "down":
@@ -78,7 +76,7 @@ class GoldRush extends Matrix {
 }
 const board = new GoldRush(5, 5)
 board.print()
-
+// board.addCoins()
 
 // board.movePlayer(1, "up")
 // board.print()
