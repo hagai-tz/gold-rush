@@ -37,6 +37,7 @@ class Matrix {
             }
             console.log(line)
         }
+        console.log(`\n`)
     }
     printRow(rowNum) {
         let line = ""
